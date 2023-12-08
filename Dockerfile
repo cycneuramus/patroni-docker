@@ -4,7 +4,8 @@ RUN apk add --no-cache wget \
 	&& wget -q https://github.com/wal-g/wal-g/releases/download/v2.0.1/wal-g-pg-ubuntu-20.04-amd64 -O /wal-g \
 	&& chmod 777 /wal-g
 
-FROM postgres:15
+# FROM postgres:15
+FROM tensorchord/pgvecto-rs:pg15-latest
 
 ARG version=3.1.0
 ARG USER=patroni
