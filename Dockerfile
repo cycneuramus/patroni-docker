@@ -5,7 +5,7 @@ RUN apk add --no-cache wget \
 	&& chmod 777 /wal-g
 
 # FROM postgres:15
-FROM tensorchord/pgvecto-rs:pg15-latest
+FROM tensorchord/pgvecto-rs:pg15-v0.2.0
 
 ARG version=3.1.0
 ARG USER=patroni
