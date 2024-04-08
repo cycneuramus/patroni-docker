@@ -7,7 +7,7 @@
 # FROM postgres:15
 FROM tensorchord/pgvecto-rs:pg15-v0.2.1
 
-ARG version=3.1.0
+ARG version=3.3.0
 ARG USER=patroni
 ARG HOME_DIR=/home/$USER
 
